@@ -6,7 +6,7 @@
 export const site = {
   name: "Headgate Plumbing & Drain",
   shortName: "Headgate",
-  url: "https://milehighpatriot.github.io/headgate-plumbing",
+  url: "https://headgate.5280webs.com",
   description:
     "Denver-metro plumbing for homes and commercial buildings. Upfront price ranges, 2-hour arrival windows, and a live person on the emergency line 24/7.",
   locale: "en_US",

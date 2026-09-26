@@ -17,7 +17,7 @@ npm run dev
 ```
 
 ## Publish (GitHub Pages)
-`npm run pages` builds a static export into `docs/` with the `/headgate-plumbing` base path. GitHub Pages serves `docs/` on `main`.
+`npm run pages` builds a static export into `docs/`. GitHub Pages serves `docs/` on `main` at https://headgate.5280webs.com (`public/CNAME` sets the domain).
 
 Business details live in `data/site.ts`; content in `data/*.ts`.
 
