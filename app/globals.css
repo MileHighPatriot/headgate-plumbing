@@ -1,0 +1,461 @@
+@import "tailwindcss";
+
+/*
+  Headgate Plumbing & Drain — "field service meets water utility".
+  Cool mineral palette taken from oxidized copper (patina), a hi-vis
+  safety accent for primary actions, and one alert red reserved for
+  emergencies. Soft "pipe fitting" geometry: big radii, notched tabs,
+  2px pipe-run rules.
+*/
+@theme {
+  --color-ink: #0b2a2a;
+  --color-ink-2: #113534;
+  --color-ink-3: #19423f;
+  --color-patina: #1f7a6d;
+  --color-patina-deep: #176459;
+  --color-mint: #9ed8c6;
+  --color-mint-soft: #dcf0e9;
+  --color-chalk: #f1f5f3;
+  --color-paper: #ffffff;
+  --color-line: #d3e0db;
+  --color-slate: #4a6360;
+  --color-fog: #8fb3ac;
+  --color-hivis: #d9f24b;
+  --color-hivis-deep: #c3dc36;
+  --color-alert: #cf2b2f;
+  --color-alert-soft: #fde8e8;
+  --color-amber-note: #fff6d6;
+
+  --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-atkinson), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-atkinson-mono), ui-monospace, monospace;
+
+  --radius-fit: 1.5rem;
+  --radius-btn: 0.625rem;
+
+  --animate-rise: rise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  --animate-tick: tick 2.4s ease-in-out infinite;
+
+  @keyframes rise {
+    /* Starts partly visible so hero text still counts for LCP. */
+    from {
+      opacity: 0.35;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes tick {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.35;
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--color-chalk);
+    color: var(--color-ink);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-variation-settings: "wdth" 88;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    font-weight: 700;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  ::selection {
+    background: var(--color-hivis);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-patina);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  .on-ink :focus-visible,
+  .on-ink:focus-visible {
+    outline-color: var(--color-hivis);
+  }
+}
+
+@layer components {
+  .wrap {
+    width: 100%;
+    max-width: 78rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .wrap {
+      padding-inline: 2rem;
+    }
+  }
+
+  /* Type scale */
+  .t-hero {
+    font-size: clamp(2.75rem, 7vw, 5.5rem);
+    line-height: 0.95;
+    font-variation-settings: "wdth" 80;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+  }
+  .t-h2 {
+    font-size: clamp(2rem, 4.2vw, 3.25rem);
+    font-variation-settings: "wdth" 82;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+  .t-h3 {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    letter-spacing: -0.015em;
+  }
+  .t-lede {
+    font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+    line-height: 1.55;
+  }
+  .t-data {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    letter-spacing: 0.01em;
+  }
+
+  /* A small sentence-case label with a valve dot, used above headings. */
+  .label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    color: var(--color-patina-deep);
+    background: var(--color-mint-soft);
+    border-radius: 999px;
+    padding: 0.3rem 0.8rem 0.3rem 0.45rem;
+  }
+  .label::before {
+    content: "";
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 999px;
+    border: 2px solid currentColor;
+    background: radial-gradient(circle, currentColor 0 2px, transparent 2.5px);
+  }
+  .on-ink .label {
+    color: var(--color-mint);
+    background: rgb(158 216 198 / 0.12);
+  }
+
+  /* Buttons: square-ish, never pills. */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    min-height: 3rem;
+    padding: 0.7rem 1.25rem;
+    border-radius: var(--radius-btn);
+    font-weight: 700;
+    line-height: 1.1;
+    transition:
+      background-color 0.2s,
+      color 0.2s,
+      box-shadow 0.2s,
+      transform 0.15s;
+  }
+  .btn:active {
+    transform: translateY(1px);
+  }
+  .btn-go {
+    background: var(--color-hivis);
+    color: var(--color-ink);
+    box-shadow: inset 0 0 0 2px var(--color-ink);
+  }
+  .on-ink .btn-go {
+    box-shadow: none;
+  }
+  .btn-go:hover {
+    background: var(--color-hivis-deep);
+  }
+  .btn-ink {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+  .btn-ink:hover {
+    background: var(--color-ink-3);
+  }
+  .btn-line {
+    box-shadow: inset 0 0 0 2px currentColor;
+  }
+  .btn-line:hover {
+    background: rgb(11 42 42 / 0.06);
+  }
+  .on-ink .btn-line:hover {
+    background: rgb(255 255 255 / 0.08);
+  }
+  .btn-alert {
+    background: var(--color-alert);
+    color: #fff;
+  }
+  .btn-alert:hover {
+    background: #b3232a;
+  }
+
+  /* Panels shaped like fittings: a notched tab sits on the top edge. */
+  .panel {
+    background: var(--color-paper);
+    border-radius: var(--radius-fit);
+    border: 1px solid var(--color-line);
+  }
+  .panel-ink {
+    background: var(--color-ink);
+    color: var(--color-paper);
+    border-radius: var(--radius-fit);
+  }
+  .tabbed {
+    border-top-left-radius: 0;
+    position: relative;
+  }
+  .tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    padding: 0.45rem 0.95rem 0.35rem;
+    border-radius: 0.75rem 0.75rem 0 0;
+    background: var(--color-ink);
+    color: var(--color-mint);
+    position: relative;
+  }
+  .tab::after {
+    /* inverted corner so the tab reads as one piece with the panel */
+    content: "";
+    position: absolute;
+    right: -0.75rem;
+    bottom: 0;
+    width: 0.75rem;
+    height: 0.75rem;
+    background: radial-gradient(circle at 100% 0, transparent 0.75rem, var(--color-ink) 0.76rem);
+  }
+  .tab-paper {
+    background: var(--color-paper);
+    color: var(--color-patina-deep);
+    border: 1px solid var(--color-line);
+    border-bottom: 0;
+  }
+  .tab-paper::after {
+    display: none;
+  }
+
+  /* 2px pipe run with an elbow, used to join a heading to its content. */
+  .pipe-run {
+    position: relative;
+    padding-left: 1.75rem;
+  }
+  .pipe-run::before {
+    content: "";
+    position: absolute;
+    left: 0.35rem;
+    top: 0.6rem;
+    bottom: 0;
+    width: 1.1rem;
+    border-left: 2px solid var(--color-patina);
+    border-top: 2px solid var(--color-patina);
+    border-top-left-radius: 0.9rem;
+  }
+  .on-ink .pipe-run::before {
+    border-color: var(--color-mint);
+    opacity: 0.6;
+  }
+
+  /* Chip buttons (symptoms, filters) */
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 2.75rem;
+    padding: 0.5rem 0.95rem;
+    border-radius: 0.75rem;
+    border: 1.5px solid var(--color-line);
+    background: var(--color-paper);
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition:
+      border-color 0.2s,
+      background-color 0.2s;
+  }
+  .chip:hover {
+    border-color: var(--color-patina);
+  }
+  .chip[aria-pressed="true"],
+  .chip[aria-checked="true"] {
+    background: var(--color-ink);
+    border-color: var(--color-ink);
+    color: var(--color-paper);
+  }
+  .on-ink .chip {
+    background: rgb(255 255 255 / 0.04);
+    border-color: rgb(158 216 198 / 0.28);
+    color: var(--color-paper);
+  }
+  .on-ink .chip:hover {
+    border-color: var(--color-hivis);
+  }
+
+  .field {
+    width: 100%;
+    min-height: 3rem;
+    border-radius: 0.75rem;
+    border: 1.5px solid var(--color-line);
+    background: var(--color-paper);
+    padding: 0.65rem 0.9rem;
+    font: inherit;
+    color: var(--color-ink);
+  }
+  .field:focus {
+    border-color: var(--color-patina);
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(31 122 109 / 0.2);
+  }
+
+  .link {
+    color: var(--color-patina-deep);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--color-mint);
+  }
+  .link:hover {
+    text-decoration-color: var(--color-patina);
+  }
+  .on-ink .link {
+    color: var(--color-mint);
+    text-decoration-color: rgb(158 216 198 / 0.4);
+  }
+
+  /* Urgency badges */
+  .urgency {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.5rem;
+  }
+  .urgency-now {
+    background: var(--color-alert);
+    color: #fff;
+  }
+  .urgency-today {
+    background: var(--color-hivis);
+    color: var(--color-ink);
+  }
+  .urgency-wait {
+    background: var(--color-mint-soft);
+    color: var(--color-patina-deep);
+  }
+
+  /* Photo inside a rounded "fitting" frame with a coupling band. */
+  .fitting-photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem 2rem 2rem 0.5rem;
+  }
+  .fitting-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -4rem;
+    z-index: 100;
+    background: var(--color-hivis);
+    color: var(--color-ink);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+  }
+  .skip-link:focus {
+    top: 1rem;
+  }
+
+  .prose-hg p + p {
+    margin-top: 1rem;
+  }
+  .prose-hg ul {
+    margin-top: 0.75rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+  .prose-hg li {
+    padding-left: 1.4rem;
+    position: relative;
+  }
+  .prose-hg li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 0.6rem;
+    height: 2px;
+    background: var(--color-patina);
+  }
+}
+
+@layer utilities {
+  .rise {
+    animation: var(--animate-rise);
+  }
+  .rise-2 {
+    animation: var(--animate-rise);
+    animation-delay: 0.08s;
+  }
+  .rise-3 {
+    animation: var(--animate-rise);
+    animation-delay: 0.16s;
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.22s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,6 @@
+:HL["/headgate-plumbing/_next/static/chunks/1n04f1f8s64do.css","style"]
+:HL["/headgate-plumbing/_next/static/media/847c6af3f14ca2aa.p.2dv7oiayrgfo5.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/headgate-plumbing/_next/static/media/8fe4c34884868de9-s.p.1kfyfr_m2hx2x.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/headgate-plumbing/photos/pvc-960.webp","image",{"fetchPriority":"high","imageSrcSet":"/headgate-plumbing/photos/pvc-480.webp 480w, /headgate-plumbing/photos/pvc-640.webp 640w, /headgate-plumbing/photos/pvc-800.webp 800w, /headgate-plumbing/photos/pvc-960.webp 960w","imageSizes":"(min-width: 768px) 288px, 100vw"}]
+:HL["/headgate-plumbing/photos/tank-valves-960.webp","image",{"fetchPriority":"high","imageSrcSet":"/headgate-plumbing/photos/tank-valves-480.webp 480w, /headgate-plumbing/photos/tank-valves-640.webp 640w, /headgate-plumbing/photos/tank-valves-800.webp 800w, /headgate-plumbing/photos/tank-valves-960.webp 960w","imageSizes":"(min-width: 768px) 288px, 100vw"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"services","param":null,"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"yqgmJpUBeE9RqRtuq4CE8"}

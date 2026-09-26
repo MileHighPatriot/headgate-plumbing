@@ -1,0 +1,102 @@
+{
+  "bath-sink": {
+    "width": 960,
+    "height": 640,
+    "widths": [
+      480,
+      640,
+      800,
+      960
+    ]
+  },
+  "burst": {
+    "width": 1300,
+    "height": 865,
+    "widths": [
+      480,
+      640,
+      800,
+      1200
+    ]
+  },
+  "handwheel": {
+    "width": 960,
+    "height": 640,
+    "widths": [
+      480,
+      640,
+      800,
+      960
+    ]
+  },
+  "pipe-room": {
+    "width": 960,
+    "height": 640,
+    "widths": [
+      480,
+      640,
+      800,
+      960
+    ]
+  },
+  "pvc": {
+    "width": 960,
+    "height": 636,
+    "widths": [
+      480,
+      640,
+      800,
+      960
+    ]
+  },
+  "restaurant": {
+    "width": 960,
+    "height": 640,
+    "widths": [
+      480,
+      640,
+      800,
+      960
+    ]
+  },
+  "tank-valves": {
+    "width": 960,
+    "height": 640,
+    "widths": [
+      480,
+      640,
+      800,
+      960
+    ]
+  },
+  "tech-pump": {
+    "width": 1300,
+    "height": 867,
+    "widths": [
+      480,
+      640,
+      800,
+      1200
+    ]
+  },
+  "wall-pipes": {
+    "width": 960,
+    "height": 1280,
+    "widths": [
+      480,
+      640,
+      800,
+      960
+    ]
+  },
+  "white-pipes": {
+    "width": 960,
+    "height": 640,
+    "widths": [
+      480,
+      640,
+      800,
+      960
+    ]
+  }
+}
