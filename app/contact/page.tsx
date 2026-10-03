@@ -49,7 +49,7 @@ export default function ContactPage() {
             <p className="mt-1 font-bold">
               {site.address.street}
               <br />
-              {site.address.city}, {site.address.region} {site.address.postal}
+              {site.address.city}, {site.address.region}
             </p>
             <p className="mt-3 text-slate">Parts counter open to account customers, weekdays 7–9am.</p>
           </div>

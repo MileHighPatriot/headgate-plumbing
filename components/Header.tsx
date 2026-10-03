@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Icon from "@/components/Icon";
 import Logo from "@/components/Logo";
 import { nav } from "@/data/nav";
@@ -11,6 +11,11 @@ import { site } from "@/data/site";
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  // The concept bar above the header wraps to a different height on every screen, so the
+  // phone menu is placed at the header's measured bottom edge (top-[6.9rem] is the fallback).
+  const headerRef = useRef<HTMLElement>(null);
+  const [menuTop, setMenuTop] = useState<number>();
+  const placeMenu = () => setMenuTop(headerRef.current?.getBoundingClientRect().bottom);
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect -- close the menu after navigating
@@ -19,15 +24,17 @@ export default function Header() {
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
+    if (open) window.addEventListener("resize", placeMenu);
     return () => {
       document.body.style.overflow = "";
+      window.removeEventListener("resize", placeMenu);
     };
   }, [open]);
 
   const isActive = (href: string) => pathname.startsWith(href.replace(/\/$/, ""));
 
   return (
-    <header className="relative z-40">
+    <header ref={headerRef} className="relative z-40">
       <div className="on-ink bg-ink text-paper">
         <div className="wrap flex min-h-10 items-center justify-between gap-4 py-1.5 text-sm">
           <a href={site.phoneHref} className="flex items-center gap-2 font-bold hover:text-hivis">
@@ -84,7 +91,10 @@ export default function Header() {
               className="btn btn-ink min-h-11 px-3 lg:hidden"
               aria-expanded={open}
               aria-controls="mobile-menu"
-              onClick={() => setOpen((v) => !v)}
+              onClick={() => {
+                placeMenu();
+                setOpen((v) => !v);
+              }}
             >
               <Icon name={open ? "close" : "menu"} />
               <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
@@ -96,6 +106,7 @@ export default function Header() {
       <div
         id="mobile-menu"
         hidden={!open}
+        style={menuTop === undefined ? undefined : { top: menuTop }}
         className="on-ink fixed inset-x-0 bottom-0 top-[6.9rem] overflow-y-auto bg-ink text-paper lg:hidden"
       >
         <nav aria-label="Mobile" className="wrap py-6">

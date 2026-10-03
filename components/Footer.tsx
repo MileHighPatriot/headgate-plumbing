@@ -25,7 +25,7 @@ export default function Footer() {
             </a>
             <p className="flex items-center gap-2 text-fog">
               <Icon name="pin" className="h-4 w-4 text-mint" />
-              {site.address.street}, {site.address.city}, {site.address.region} {site.address.postal}
+              {site.address.street}, {site.address.city}, {site.address.region}
             </p>
           </div>
         </div>

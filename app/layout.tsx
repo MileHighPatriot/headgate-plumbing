@@ -70,6 +70,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <a href="#main" className="skip-link">
           Skip to content
         </a>
+        <aside aria-label="Concept project notice" className="border-b border-line bg-mint-soft text-ink">
+          <p className="wrap py-2 text-sm leading-5 text-pretty">
+            Concept project: a sample site built by 5280 Web Solutions. Headgate Plumbing &amp; Drain is not a real
+            company.{" "}
+            <a href="https://5280webs.com" className="font-bold whitespace-nowrap text-patina-deep underline underline-offset-4 hover:text-ink">
+              See more at 5280webs.com
+            </a>
+          </p>
+        </aside>
         <Header />
         <ViewTransition>
           <main id="main">{children}</main>

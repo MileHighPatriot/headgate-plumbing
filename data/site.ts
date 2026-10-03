@@ -1,7 +1,8 @@
 /**
  * Single edit point for business details. Headgate is a fictional company
  * built as a portfolio concept — the phone uses the 555-01xx fiction range and
- * license numbers are samples in the real Colorado format.
+ * license numbers are samples in the real Colorado format. The street is made up
+ * too (no ZIP), so the site never points at a real building.
  */
 export const site = {
   name: "Headgate Plumbing & Drain",
@@ -17,10 +18,9 @@ export const site = {
   textHref: "sms:+13035550187",
   email: "dispatch@headgate.example",
   address: {
-    street: "4180 Fox St, Unit B",
+    street: "400 Example Gulch Way",
     city: "Denver",
     region: "CO",
-    postal: "80216",
   },
   geo: { lat: 39.7392, lon: -104.9903 },
   hours: {

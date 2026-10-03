@@ -1,6 +1,6 @@
-:HL["/_next/static/chunks/1n04f1f8s64do.css","style"]
+:HL["/_next/static/chunks/11j4s6abknrog.css","style"]
 :HL["/_next/static/media/847c6af3f14ca2aa.p.2dv7oiayrgfo5.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/8fe4c34884868de9-s.p.1kfyfr_m2hx2x.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/photos/pvc-960.webp","image",{"fetchPriority":"high","imageSrcSet":"/photos/pvc-480.webp 480w, /photos/pvc-640.webp 640w, /photos/pvc-800.webp 800w, /photos/pvc-960.webp 960w","imageSizes":"(min-width: 768px) 288px, 100vw"}]
 :HL["/photos/tank-valves-960.webp","image",{"fetchPriority":"high","imageSrcSet":"/photos/tank-valves-480.webp 480w, /photos/tank-valves-640.webp 640w, /photos/tank-valves-800.webp 800w, /photos/tank-valves-960.webp 960w","imageSizes":"(min-width: 768px) 288px, 100vw"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"services","param":null,"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"7x6lZi7lnF0ZcbLW-jaiy"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"services","param":null,"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"XeWqFKXfMHZ7sdKeXE5Na"}
