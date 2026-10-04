@@ -62,7 +62,7 @@ export default function AboutPage() {
         <div className="wrap">
           <div className="flex flex-wrap items-baseline justify-between gap-3">
             <h2 className="t-h2">Who shows up</h2>
-            <p className="t-data text-slate">Sample crew — Headgate is a concept company.</p>
+            <p className="t-data text-slate">Sample crew. Headgate is a concept company.</p>
           </div>
           <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {team.map((t) => (

@@ -263,7 +263,7 @@ export default function Home() {
         <div className="wrap mt-16">
           <div className="flex flex-wrap items-baseline justify-between gap-3">
             <h3 className="font-display text-2xl font-bold">From the invoice file</h3>
-            <p className="t-data text-slate">Illustrative reviews — Headgate is a concept company.</p>
+            <p className="t-data text-slate">Illustrative reviews. Headgate is a concept company.</p>
           </div>
           <ul className="mt-6 grid gap-5 md:grid-cols-3">
             {reviews.map((r) => (

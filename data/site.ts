@@ -28,8 +28,8 @@ export const site = {
     emergency: "24/7, answered by a person",
   },
   licenses: [
-    { label: "Plumbing contractor", value: "PC #0009417 (sample)" },
-    { label: "Master plumber", value: "MP #00312086 (sample)" },
+    { label: "Plumbing contractor", value: "#000000 (sample)" },
+    { label: "Master plumber", value: "#000000 (sample)" },
     { label: "Certified backflow tester", value: "ASSE 5110 (sample)" },
   ],
   xcelGasEmergency: "1-800-895-2999",
