@@ -12,8 +12,8 @@ export default function Footer() {
         <div>
           <Logo tone="paper" />
           <p className="mt-5 max-w-sm text-fog">
-            Plumbing and drain service for Denver-metro homes and commercial buildings since {site.founded}. Locally
-            owned — not private equity.
+            Plumbing and drain service for Denver-metro homes and commercial buildings. Locally
+            owned. Not private equity.
           </p>
           <div className="mt-6 grid gap-2">
             <a href={site.phoneHref} className="flex items-center gap-2 font-bold hover:text-hivis">

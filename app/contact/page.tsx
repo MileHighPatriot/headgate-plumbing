@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const ways = [
-  { icon: "phone", k: "Call — 24/7", v: site.phone, href: site.phoneHref, note: "A person answers, day or night." },
+  { icon: "phone", k: "Call 24/7", v: site.phone, href: site.phoneHref, note: "A person answers, day or night." },
   { icon: "text", k: "Text dispatch", v: site.text, href: site.textHref, note: "Send a photo of the problem or a water heater label." },
   { icon: "calendar", k: "Book online", v: "Pick a two-hour window", href: "/book/", note: "Confirmation and arrival texts." },
 ];

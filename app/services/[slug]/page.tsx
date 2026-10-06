@@ -139,7 +139,7 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
                 </tbody>
               </table>
             </div>
-            <p className="t-data mt-4 text-slate">General guide — a camera inspection is the only way to know what&apos;s really there.</p>
+            <p className="t-data mt-4 text-slate">General guide. A camera inspection is the only way to know what&apos;s really there.</p>
           </div>
         </section>
       ) : null}

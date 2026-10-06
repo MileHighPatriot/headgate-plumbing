@@ -102,13 +102,13 @@ export default function WhosePipe() {
           </g>
 
           {/* water main */}
-          <Seg id="water-main" label="Water main — Denver Water" {...common} hit={<circle cx="90" cy="290" r="24" />}>
+          <Seg id="water-main" label="Water main: Denver Water" {...common} hit={<circle cx="90" cy="290" r="24" />}>
             <circle cx="90" cy="290" r="24" fill="#0b2a2a" stroke={color("water-main")} strokeWidth={w("water-main")} />
             <text x="58" y="340" fontSize="14" fill="#9ed8c6" className="font-mono">Water main</text>
           </Seg>
 
           {/* sewer main */}
-          <Seg id="sewer-main" label="Sewer main — City of Denver" {...common} hit={<circle cx="150" cy="410" r="30" />}>
+          <Seg id="sewer-main" label="Sewer main: City of Denver" {...common} hit={<circle cx="150" cy="410" r="30" />}>
             <circle cx="150" cy="410" r="30" fill="#0b2a2a" stroke={color("sewer-main")} strokeWidth={w("sewer-main")} strokeDasharray="10 6" />
             <text x="196" y="448" fontSize="14" fill="#9ed8c6" className="font-mono">Sewer main</text>
           </Seg>
@@ -116,7 +116,7 @@ export default function WhosePipe() {
           {/* service line */}
           <Seg
             id="service-line"
-            label="Water service line — property owner"
+            label="Water service line: property owner"
             {...common}
             hit={<path d="M116 290H292M308 290H388M412 290H630" />}
           >
@@ -125,7 +125,7 @@ export default function WhosePipe() {
           </Seg>
 
           {/* curb stop */}
-          <Seg id="curb-stop" label="Curb stop — property owner" {...common} hit={<path d="M300 196V290" />}>
+          <Seg id="curb-stop" label="Curb stop: property owner" {...common} hit={<path d="M300 196V290" />}>
             <rect x="295" y="192" width="10" height="84" rx="3" fill="none" stroke={color("curb-stop")} strokeWidth="3" />
             <rect x="288" y="186" width="24" height="7" rx="2" fill={color("curb-stop")} />
             <path d="M290 280l20 20M310 280l-20 20" stroke={color("curb-stop")} strokeWidth="5" />
@@ -133,7 +133,7 @@ export default function WhosePipe() {
           </Seg>
 
           {/* meter pit */}
-          <Seg id="meter-pit" label="Meter and meter pit — property owner" {...common} hit={<path d="M372 196V306H428V196" />}>
+          <Seg id="meter-pit" label="Meter and meter pit: property owner" {...common} hit={<path d="M372 196V306H428V196" />}>
             <path d="M372 192V308H428V192" fill="none" stroke={color("meter-pit")} strokeWidth="3" />
             <rect x="364" y="184" width="72" height="8" rx="2" fill={color("meter-pit")} />
             <circle cx="400" cy="290" r="13" fill="#0b2a2a" stroke={color("meter-pit")} strokeWidth="4" />
@@ -143,7 +143,7 @@ export default function WhosePipe() {
           {/* house plumbing */}
           <Seg
             id="house"
-            label="House plumbing — property owner"
+            label="House plumbing: property owner"
             {...common}
             hit={<path d="M634 290H700V222H880V112M770 236V316" />}
           >
@@ -159,7 +159,7 @@ export default function WhosePipe() {
           {/* sewer lateral */}
           <Seg
             id="sewer-lateral"
-            label="Sewer lateral — property owner, all the way to the main"
+            label="Sewer lateral: property owner, all the way to the main"
             {...common}
             hit={<path d="M900 300V350L640 368L182 404" />}
           >

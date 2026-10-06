@@ -4,7 +4,7 @@ export const team = [
     name: "Marisol Vega",
     role: "Owner · Master plumber",
     years: 22,
-    note: "Started Headgate in 2009 with one truck and a sewer camera. Still runs the Monday dispatch meeting.",
+    note: "Started Headgate with one truck and a sewer camera. Still runs the Monday dispatch meeting.",
   },
   {
     name: "Dale Okafor",

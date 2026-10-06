@@ -48,7 +48,7 @@ const account = [
   ["Scheduled maintenance", "Jetting, water heater service and backflow tests on a calendar we keep, not you."],
   ["Priority emergency response", "Account buildings go to the top of the board, day or night."],
   ["Filed for you", "Backflow reports submitted to your water provider, with copies in your account file."],
-  ["One monthly invoice", "Per property or rolled up — however your accounting wants it."],
+  ["One monthly invoice", "Per property or rolled up, however your accounting wants it."],
 ];
 
 export default function CommercialPage() {
@@ -109,7 +109,7 @@ export default function CommercialPage() {
             </div>
             <p className="t-lede text-slate">
               Water providers require testable backflow assemblies to be tested every year by a certified tester. Enter
-              your last test date and we&apos;ll show you when the next one is due — and what it costs to have us test
+              your last test date and we&apos;ll show you when the next one is due and what it costs to have us test
               and file it.
             </p>
           </div>

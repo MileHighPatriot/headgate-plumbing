@@ -19,7 +19,7 @@ export const services: Service[] = [
     short: "Clogs, main line backups, camera inspections, and trenchless sewer repair.",
     photo: "pvc",
     photoAlt: "Stacked green PVC drainage pipe, seen end-on",
-    lede: "One slow sink is a clog. Every drain gurgling at once is your main line — and in older Denver neighborhoods, that usually means roots in clay pipe.",
+    lede: "One slow sink is a clog. Every drain gurgling at once is your main line, and in older Denver neighborhoods, that usually means roots in clay pipe.",
     signs: [
       "Water comes up in the basement floor drain when the washer drains",
       "Toilets gurgle or bubble when a sink runs",
@@ -42,13 +42,13 @@ export const services: Service[] = [
     ],
     colorado: {
       title: "In Denver, the sewer line is yours to the street",
-      body: "The property owner is responsible for the sewer lateral all the way to the city main — including the part under the sidewalk and street. Homes built before the 1970s usually have clay, cast iron or Orangeburg pipe, and our expansive clay soils shift joints enough to let roots in.",
+      body: "The property owner is responsible for the sewer lateral all the way to the city main, including the part under the sidewalk and street. Homes built before the 1970s usually have clay, cast iron or Orangeburg pipe, and our expansive clay soils shift joints enough to let roots in.",
     },
     prices: ["clog-fixture", "main-cable", "hydro-jet", "camera", "spot-repair", "lining"],
     questions: [
       {
         q: "Should I pour chemical drain cleaner in first?",
-        a: "Please don't. It rarely clears a main line, it can damage older pipe, and it's dangerous for whoever opens the line next — including you.",
+        a: "Please don't. It rarely clears a main line, it can damage older pipe, and it's dangerous for whoever opens the line next, including you.",
       },
       {
         q: "Do I need a camera inspection before buying a house?",
@@ -63,7 +63,7 @@ export const services: Service[] = [
   {
     slug: "water-heaters",
     name: "Water heaters",
-    short: "Repair, replacement and tankless installs — altitude-rated and permitted.",
+    short: "Repair, replacement and tankless installs, altitude-rated and permitted.",
     photo: "tank-valves",
     photoAlt: "Steel tank with two valves and copper supply lines",
     lede: "Most tank water heaters give you 8 to 12 years. If yours is past that and making noise or weeping at the base, we'd rather replace it on a Tuesday than after it floods the basement on a Saturday.",
@@ -89,7 +89,7 @@ export const services: Service[] = [
     ],
     colorado: {
       title: "Altitude changes the gas math",
-      body: "At 5,280 feet there's less oxygen for combustion, so fuel gas codes require gas appliances to be derated for elevation — or the utility supplies gas that already accounts for it. We install units rated for our altitude and set them up to match.",
+      body: "At 5,280 feet there's less oxygen for combustion, so fuel gas codes require gas appliances to be derated for elevation, or the utility supplies gas that already accounts for it. We install units rated for our altitude and set them up to match.",
     },
     prices: ["wh-flush", "wh-repair", "wh-tank", "wh-tankless"],
     questions: [
@@ -103,7 +103,7 @@ export const services: Service[] = [
       },
       {
         q: "Should I flush my tank every year?",
-        a: "Yes — sediment is what makes tanks rumble and fail early. It's included in the Care Plan visit.",
+        a: "Yes. Sediment is what makes tanks rumble and fail early. It's included in the Care Plan visit.",
       },
     ],
   },
@@ -113,7 +113,7 @@ export const services: Service[] = [
     short: "Service lines, main shutoffs, PRVs, and repiping galvanized or polybutylene homes.",
     photo: "white-pipes",
     photoAlt: "White-painted supply pipes and fittings running along a ceiling",
-    lede: "The pipe that brings water into your house is yours, not the utility's. So is the valve that shuts it off — and in a lot of older homes, nobody has turned it in twenty years.",
+    lede: "The pipe that brings water into your house is yours, not the utility's. So is the valve that shuts it off, and in a lot of older homes, nobody has turned it in twenty years.",
     signs: [
       "Low pressure throughout the house",
       "Banging pipes or a toilet that refills on its own",
@@ -127,7 +127,7 @@ export const services: Service[] = [
       },
       {
         title: "Service lines",
-        body: "Replacement from the curb stop to the house, trenchless where the soil allows. We'll check whether yours is lead first — it may qualify for free replacement.",
+        body: "Replacement from the curb stop to the house, trenchless where the soil allows. We'll check whether yours is lead first. It may qualify for free replacement.",
       },
       {
         title: "Repiping",
@@ -136,13 +136,13 @@ export const services: Service[] = [
     ],
     colorado: {
       title: "Denver Water replaces lead service lines at no direct cost",
-      body: "Denver Water estimates tens of thousands of older homes — mostly built before 1951 — may still have lead service lines. Its Lead Reduction Program replaces them with copper at no direct cost to the homeowner. Check your address on Denver Water's map before paying anyone, us included, to replace a lead line.",
+      body: "Denver Water estimates tens of thousands of older homes (mostly built before 1951) may still have lead service lines. Its Lead Reduction Program replaces them with copper at no direct cost to the homeowner. Check your address on Denver Water's map before paying anyone, us included, to replace a lead line.",
     },
     prices: ["prv", "main-shutoff", "service-line", "repipe"],
     questions: [
       {
         q: "Where's my main shutoff?",
-        a: "Usually where the water line comes through the basement or crawlspace wall on the street side of the house. Some homes also have a curb stop in the meter pit near the sidewalk — that one needs a key.",
+        a: "Usually where the water line comes through the basement or crawlspace wall on the street side of the house. Some homes also have a curb stop in the meter pit near the sidewalk. That one needs a key.",
       },
       {
         q: "What pressure should my house be at?",
@@ -170,7 +170,7 @@ export const services: Service[] = [
       },
       {
         title: "Fixtures",
-        body: "Faucets, toilets, disposals, shower valves and hose bibs. Your fixture or ours — we'll install either and warranty our labor.",
+        body: "Faucets, toilets, disposals, shower valves and hose bibs. Your fixture or ours. We'll install either and warranty our labor.",
       },
       {
         title: "Sump pumps",
@@ -179,7 +179,7 @@ export const services: Service[] = [
     ],
     colorado: {
       title: "Hose bibs are the #1 spring leak we find",
-      body: "A frost-free hose bib only works if the hose comes off before the first freeze. Leave it on and the pipe splits inside the wall — and you won't know until you turn it on in April.",
+      body: "A frost-free hose bib only works if the hose comes off before the first freeze. Leave it on and the pipe splits inside the wall, and you won't know until you turn it on in April.",
     },
     prices: ["leak-find", "faucet", "toilet", "disposal", "sump"],
     questions: [
@@ -217,12 +217,12 @@ export const services: Service[] = [
       },
       {
         title: "Outdoor",
-        body: "Grills, fire pits and patio heaters — trenched, bonded and pressure-tested.",
+        body: "Grills, fire pits and patio heaters. Trenched, bonded and pressure-tested.",
       },
     ],
     colorado: {
       title: "Xcel first, then us",
-      body: "Xcel Energy's gas emergency line is the right first call for any gas smell — they respond around the clock at no charge. Call them from outside, away from the house. We handle everything on your side of the meter after that.",
+      body: "Xcel Energy's gas emergency line is the right first call for any gas smell. They respond around the clock at no charge. Call them from outside, away from the house. We handle everything on your side of the meter after that.",
     },
     prices: ["gas-test", "gas-run"],
     questions: [
@@ -235,10 +235,10 @@ export const services: Service[] = [
   {
     slug: "emergency",
     name: "Emergency & frozen pipes",
-    short: "24/7 burst pipes, backups, and no-water calls — answered by a person.",
+    short: "24/7 burst pipes, backups, and no-water calls, answered by a person.",
     photo: "burst",
     photoAlt: "Hands in a red jacket working on a pipe fitting in spraying water",
-    lede: "Call any time, day or night. A person answers — not a menu — and talks you through shutting the water off while a plumber heads your way.",
+    lede: "Call any time, day or night. A person answers (not a menu) and talks you through shutting the water off while a plumber heads your way.",
     signs: [
       "Water spraying, pouring or coming through a ceiling",
       "No water anywhere in the house on a cold morning",
@@ -252,7 +252,7 @@ export const services: Service[] = [
       },
       {
         title: "Make it safe",
-        body: "Burst pipes repaired, backups cleared, and frozen lines thawed with safe heat — then checked for splits before the water comes back on.",
+        body: "Burst pipes repaired, backups cleared, and frozen lines thawed with safe heat, then checked for splits before the water comes back on.",
       },
       {
         title: "Paper trail",
@@ -267,7 +267,7 @@ export const services: Service[] = [
     questions: [
       {
         q: "Do you charge more at night?",
-        a: "Yes — a flat after-hours dispatch fee, quoted on the phone before we roll. Care Plan members don't pay it.",
+        a: "Yes, a flat after-hours dispatch fee, quoted on the phone before we roll. Care Plan members don't pay it.",
       },
       {
         q: "Should I use a torch on a frozen pipe?",

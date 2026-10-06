@@ -15,7 +15,7 @@ export default function ToolsPage() {
       <PageHead
         label="Know your system"
         title="Tools we wish every homeowner had."
-        lede="Free, no sign-up, and built on Denver Water's published rules and the manufacturers' own serial codes. Use them before you call anyone — including us."
+        lede="Free, no sign-up, and built on Denver Water's published rules and the manufacturers' own serial codes. Use them before you call anyone, including us."
         aside={<TriageAside />}
       />
       <section className="py-12 md:py-16">

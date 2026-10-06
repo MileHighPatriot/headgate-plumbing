@@ -13,7 +13,7 @@ const rules = [
   ["The range is the range.", "Your exact price is confirmed on site, in writing, before any work starts. No surprise line items."],
   [`$${site.dispatchFee} to come out.`, "Credited to the repair if you go ahead. Waived for Care Plan members."],
   ["Nights and Sundays cost more.", `A flat $${site.afterHoursFee} after-hours fee, told to you on the phone before we roll.`],
-  ["Permits are included.", "When a job needs a permit — water heaters, gas lines, sewer repairs — it's in the price."],
+  ["Permits are included.", "When a job needs a permit (water heaters, gas lines, sewer repairs), it's in the price."],
 ];
 
 export default function PricingPage() {
@@ -22,7 +22,7 @@ export default function PricingPage() {
       <PageHead
         label="Price book"
         title="What things usually cost."
-        lede="Typical ranges for the jobs we do most across the Denver metro. The big swings come from access — a crawlspace, a finished ceiling, a sewer under the driveway — and we'll tell you which end you're on before we start."
+        lede="Typical ranges for the jobs we do most across the Denver metro. The big swings come from access (a crawlspace, a finished ceiling, a sewer under the driveway), and we'll tell you which end you're on before we start."
         aside={
           <ul className="grid gap-4">
             {rules.map(([a, b]) => (

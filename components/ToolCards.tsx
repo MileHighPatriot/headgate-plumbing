@@ -5,7 +5,7 @@ export const tools = [
   {
     href: "/tools/whose-pipe/",
     title: "Whose pipe is it?",
-    body: "Tap through a Denver lot and see which pipes the utility fixes — and which ones are yours.",
+    body: "Tap through a Denver lot and see which pipes the utility fixes and which ones are yours.",
     glyph: "pipe",
   },
   {

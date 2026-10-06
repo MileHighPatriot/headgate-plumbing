@@ -30,7 +30,7 @@ export type Symptom = {
 };
 
 export const urgencyCopy: Record<Urgency, { label: string; line: string }> = {
-  now: { label: "Now", line: "Call us now — we answer 24/7." },
+  now: { label: "Now", line: "Call us now. We answer 24/7." },
   today: { label: "Today", line: "Get on today's schedule." },
   wait: { label: "Can wait", line: "Book a window that suits you." },
 };
@@ -68,7 +68,7 @@ export const symptoms: Symptom[] = [
       flow: {
         q: "Is water actively spraying or running right now?",
         options: [
-          { label: "Yes — it's spraying or pouring", to: "out:shut" },
+          { label: "Yes, it's spraying or pouring", to: "out:shut" },
           { label: "It's dripping or a slow leak", to: "out:drip" },
           { label: "Just a stain or a damp spot", to: "out:stain" },
         ],
@@ -79,7 +79,7 @@ export const symptoms: Symptom[] = [
         urgency: "now",
         title: "Shut off the main, then call",
         steps: [
-          "Find the main shutoff — usually where the water line enters the basement or crawlspace wall on the street side.",
+          "Find the main shutoff, usually where the water line enters the basement or crawlspace wall on the street side.",
           "Turn it clockwise until it stops (a lever handle goes a quarter turn, crossways to the pipe).",
           "Open the lowest faucet in the house to drain pressure off the line.",
           "If water is near outlets or the panel, stay out of standing water and switch that circuit off at the breaker if you can do it dry.",
@@ -94,7 +94,7 @@ export const symptoms: Symptom[] = [
         steps: [
           "Put a bucket or towels under it and move anything valuable.",
           "If there's a shutoff valve under the fixture, close it.",
-          "Take a photo of the leak and any staining — it helps us and your insurer.",
+          "Take a photo of the leak and any staining. It helps us and your insurer.",
         ],
         why: "A steady drip becomes a rotten subfloor or mold behind the wall. It's rarely an emergency, but it shouldn't wait for the weekend.",
         prices: ["leak-find", "faucet", "toilet"],
@@ -105,7 +105,7 @@ export const symptoms: Symptom[] = [
         title: "Book a leak detection visit",
         steps: [
           "Check your water meter with every fixture off. If the dial moves, water is going somewhere.",
-          "Note whether the stain grows after a shower upstairs — that narrows it down.",
+          "Note whether the stain grows after a shower upstairs. That narrows it down.",
         ],
         why: "Stains are usually slow leaks at a drain, valve or wax ring. We find the exact spot before cutting anything.",
         prices: ["leak-find"],
@@ -142,7 +142,7 @@ export const symptoms: Symptom[] = [
         steps: [
           "Close the cold-water valve on the pipe going into the top of the tank.",
           "Gas: turn the knob on the gas control to “Pilot” or “Vacation.” Electric: switch it off at the breaker.",
-          "Don't try to drain it yourself — the water is scalding and old drain valves often won't reseal.",
+          "Don't try to drain it yourself. The water is scalding and old drain valves often won't reseal.",
         ],
         why: "A leaking tank almost always means the tank itself has failed. It won't fix itself, and they can let go all at once.",
         prices: ["wh-tank", "wh-tankless"],
@@ -153,10 +153,10 @@ export const symptoms: Symptom[] = [
         title: "Check the pilot, then call if it won't stay lit",
         steps: [
           "Look through the small window at the bottom of the tank for a flame.",
-          "If it's out, follow the relighting steps on the tank's label — once. If it won't stay lit, stop.",
+          "If it's out, follow the relighting steps on the tank's label, once. If it won't stay lit, stop.",
           "If you smell gas at any point, leave and call Xcel Energy.",
         ],
-        why: "A pilot that won't stay lit is usually a thermocouple or gas valve — often a same-visit repair.",
+        why: "A pilot that won't stay lit is usually a thermocouple or gas valve, often a same-visit repair.",
         prices: ["wh-repair", "wh-tank"],
         service: "water-heaters",
       },
@@ -165,7 +165,7 @@ export const symptoms: Symptom[] = [
         title: "Check the breaker, then call",
         steps: [
           "Check whether the water heater's breaker has tripped. Reset it once.",
-          "If it trips again, leave it off and call — that's a failed element or wiring.",
+          "If it trips again, leave it off and call. That's a failed element or wiring.",
         ],
         why: "Electric tanks have two elements. When one fails you get lukewarm water; when both fail, none.",
         prices: ["wh-repair", "wh-tank"],
@@ -177,7 +177,7 @@ export const symptoms: Symptom[] = [
         steps: [
           "Look for a code on the unit's display and write it down.",
           "Check that the gas and water valves under the unit are open.",
-          "Try a hot tap at full flow — tankless units need a minimum flow to fire.",
+          "Try a hot tap at full flow. Tankless units need a minimum flow to fire.",
         ],
         why: "Most tankless no-heat calls are scale buildup or venting. The code tells us which parts to bring.",
         prices: ["wh-repair"],
@@ -209,10 +209,10 @@ export const symptoms: Symptom[] = [
     outcomes: {
       one: {
         urgency: "wait",
-        title: "It's a local clog — book a window",
+        title: "It's a local clog. Book a window",
         steps: [
           "Stop using that fixture and use a plunger (a flange plunger for toilets).",
-          "Skip chemical drain cleaners — they rarely work and make the job dangerous for whoever opens the line next.",
+          "Skip chemical drain cleaners. They rarely work and make the job dangerous for whoever opens the line next.",
         ],
         why: "A single slow fixture is almost always a clog in its own branch line.",
         prices: ["clog-fixture"],
@@ -220,11 +220,11 @@ export const symptoms: Symptom[] = [
       },
       main: {
         urgency: "now",
-        title: "Stop all water use — it's the main line",
+        title: "Stop all water use. It's the main line",
         steps: [
           "Don't run the washer, dishwasher, showers or flush toilets. Every gallon ends up on your basement floor.",
           "Tell everyone in the house, including tenants in a basement unit.",
-          "If you know where your outdoor cleanout is, don't open it — it may be under pressure.",
+          "If you know where your outdoor cleanout is, don't open it. It may be under pressure.",
         ],
         why: "Sewage coming up through the lowest drain means the main line is blocked. In older Denver homes that's often roots in clay pipe.",
         prices: ["main-cable", "camera", "hydro-jet"],
@@ -232,10 +232,10 @@ export const symptoms: Symptom[] = [
       },
       slow: {
         urgency: "today",
-        title: "Main line is struggling — get it cleared today",
+        title: "Main line is struggling. Get it cleared today",
         steps: [
           "Hold off on laundry and long showers until it's cleared.",
-          "Listen for gurgling in toilets when a sink drains — that confirms it's the main.",
+          "Listen for gurgling in toilets when a sink drains. That confirms it's the main.",
         ],
         why: "Multiple slow drains means a partial main line blockage. It will get worse, usually at the worst time.",
         prices: ["main-cable", "camera"],
@@ -253,7 +253,7 @@ export const symptoms: Symptom[] = [
         q: "Can you see a split, bulge, or water leaking anywhere?",
         options: [
           { label: "Yes", to: "out:burst" },
-          { label: "No — just little or no water", to: "out:thaw" },
+          { label: "No, just little or no water", to: "out:thaw" },
         ],
       },
     },
@@ -262,7 +262,7 @@ export const symptoms: Symptom[] = [
         urgency: "now",
         title: "Shut off the main before it thaws",
         steps: [
-          "Close the main shutoff now — a split pipe floods the moment the ice melts.",
+          "Close the main shutoff now. A split pipe floods the moment the ice melts.",
           "Open the faucets to relieve pressure.",
           "Turn the water heater to “Pilot” or “Vacation,” or switch it off at the breaker.",
         ],
@@ -294,7 +294,7 @@ export const symptoms: Symptom[] = [
     outcomes: {
       running: {
         urgency: "wait",
-        title: "A cheap fix — but it's costing you water",
+        title: "A cheap fix, but it's costing you water",
         steps: [
           "Lift the tank lid. If the flapper is warped or the chain is tangled, that's the likely culprit.",
           "If several toilets refill on their own and your pipes bang, your house pressure may be too high.",
@@ -335,7 +335,7 @@ export const symptoms: Symptom[] = [
         urgency: "wait",
         title: "Book a pressure and supply check",
         steps: [
-          "Ask a neighbor if they're seeing the same thing — if so, it may be a utility issue.",
+          "Ask a neighbor if they're seeing the same thing. If so, it may be a utility issue.",
           "Make sure the main shutoff is fully open.",
         ],
         why: "Whole-house low pressure is usually a failing PRV, a partly closed main valve, or corroded galvanized pipe.",

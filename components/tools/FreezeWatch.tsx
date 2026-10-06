@@ -74,7 +74,7 @@ export default function FreezeWatch() {
           <div className="mt-6 rounded-xl bg-ink-2 p-5">
             <p className="font-bold">The forecast didn&apos;t load.</p>
             <p className="mt-1 text-fog">
-              The checklist still applies — any night forecast at {FREEZE_F}°F or below is a freeze-risk night for
+              The checklist still applies. Any night forecast at {FREEZE_F}°F or below is a freeze-risk night for
               pipes on exterior walls.
             </p>
           </div>

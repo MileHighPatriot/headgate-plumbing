@@ -58,7 +58,7 @@ export default function AreaChecker({ tone = "paper" }: { tone?: "paper" | "ink"
           <div className="mt-4 flex gap-3 rounded-2xl bg-mint-soft p-4 text-ink">
             <Icon name="check" className="mt-0.5 h-5 w-5 shrink-0 text-patina-deep" strokeWidth={3} />
             <div>
-              <p className="font-bold">Yes — we cover {result.city}.</p>
+              <p className="font-bold">Yes, we cover {result.city}.</p>
               <p className="text-sm text-slate">{zoneCopy[result.zone]}</p>
               <Link href="/book/" className="link mt-1 inline-block text-sm">
                 Pick an arrival window
@@ -72,7 +72,7 @@ export default function AreaChecker({ tone = "paper" }: { tone?: "paper" | "ink"
             <div>
               <p className="font-bold">“{result.query}” is outside our regular area.</p>
               <p className="text-sm text-slate">
-                Commercial accounts and emergencies sometimes make sense farther out —{" "}
+                Commercial accounts and emergencies sometimes make sense farther out, so{" "}
                 <a href={site.phoneHref} className="link">
                   call and ask
                 </a>

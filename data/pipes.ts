@@ -46,7 +46,7 @@ export const pipeSegments: PipeSegment[] = [
     owner: "you",
     what: "Outdoor meters sit in a pit with a lid near the sidewalk. The meter, the setting and the pit belong to the property; Denver Water repairs the meter itself when it wears out.",
     fails: ["Frozen meter or setting in a cold snap", "Cracked lid or pit", "Leaks at the meter couplings"],
-    fix: "Keep the lid on and clear — never put anything on it — and protect it from freezing.",
+    fix: "Keep the lid on and clear (never put anything on it) and protect it from freezing.",
     prices: ["thaw", "leak-find"],
   },
   {
@@ -64,14 +64,14 @@ export const pipeSegments: PipeSegment[] = [
     owner: "you",
     what: "Everything past the main shutoff inside the house: supply lines, water heater, fixtures, drains and vents.",
     fails: ["Burst pipes on exterior walls", "Water heater failures", "Leaking fixtures and valves"],
-    fix: "This is most of what we do day to day — see the services pages.",
+    fix: "This is most of what we do day to day. See the services pages.",
     prices: ["burst", "wh-tank", "leak-find"],
   },
   {
     id: "sewer-lateral",
     name: "Sewer lateral",
     owner: "you",
-    what: "The drain pipe from your house to the city sewer main — including the part under the sidewalk and street.",
+    what: "The drain pipe from your house to the city sewer main, including the part under the sidewalk and street.",
     fails: ["Roots in clay pipe joints", "Sags or offsets from expansive soil", "Collapsed Orangeburg (fiber) pipe"],
     fix: "Camera it, clear it, then spot-repair or line it. In Denver the owner is responsible all the way to the main.",
     prices: ["camera", "main-cable", "spot-repair", "lining"],
@@ -82,22 +82,22 @@ export const pipeSegments: PipeSegment[] = [
     owner: "city",
     what: "The public sewer under the street that your lateral connects to.",
     fails: ["Backups that affect several neighbors at once"],
-    fix: "Report it to Denver's 311. If neighbors are backing up too, it may be the main — not your line.",
+    fix: "Report it to Denver's 311. If neighbors are backing up too, it may be the main, not your line.",
     prices: [],
   },
 ];
 
 export const pipeSources = [
   {
-    label: "Denver Water — homeowner responsibility",
+    label: "Denver Water: homeowner responsibility",
     url: "https://www.denverwater.org/residential/services-and-information/homeowner-responsibility",
   },
   {
-    label: "Denver Water — Lead Reduction Program",
+    label: "Denver Water: Lead Reduction Program",
     url: "https://www.denverwater.org/your-water/water-quality/lead/what-is-lead-reduction-program",
   },
   {
-    label: "Denver Water — lead service line address lookup",
+    label: "Denver Water: lead service line address lookup",
     url: "https://experience.arcgis.com/experience/26531bf694514f75806ab04f2d236647/",
   },
 ];

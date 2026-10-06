@@ -37,7 +37,7 @@ function Line({ k, v }: { k: string; v?: string }) {
   return (
     <div className="flex items-baseline justify-between gap-4 border-b border-dashed border-line py-2.5">
       <span className="t-data text-slate">{k}</span>
-      <span className={`text-right font-bold ${v ? "" : "text-line"}`}>{v || "——"}</span>
+      <span className="text-right font-bold">{v}</span>
     </div>
   );
 }
@@ -122,7 +122,7 @@ export default function Booking() {
           </div>
         </div>
         <p className="t-data mt-4 text-center text-slate">
-          Demo only — Headgate is a concept company and nothing was sent.
+          Demo only. Headgate is a concept company and nothing was sent.
         </p>
         <button
           type="button"
@@ -303,7 +303,7 @@ export default function Booking() {
           <button type="submit" className="btn btn-go mt-5 w-full">
             Put me on the board
           </button>
-          <p className="mt-3 text-center text-xs text-slate">Demo form — nothing is sent.</p>
+          <p className="mt-3 text-center text-xs text-slate">Demo form. Nothing is sent.</p>
         </div>
       </div>
     </form>

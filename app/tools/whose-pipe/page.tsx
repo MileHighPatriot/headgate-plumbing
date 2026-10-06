@@ -26,7 +26,7 @@ export default function WhosePipePage() {
               <p className="t-data">Before you pay to replace a service line</p>
               <h2 className="mt-2 font-display text-3xl font-extrabold">Check for lead first. It may be free.</h2>
               <p className="mt-3 max-w-xl">
-                Denver Water estimates tens of thousands of older homes — mostly built before 1951 — may still have lead
+                Denver Water estimates tens of thousands of older homes (mostly built before 1951) may still have lead
                 service lines. Its Lead Reduction Program replaces them with copper at no direct cost to the homeowner,
                 and hands out free water filters in the meantime.
               </p>

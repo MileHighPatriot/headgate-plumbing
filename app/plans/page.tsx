@@ -17,7 +17,7 @@ export default function PlansPage() {
       <PageHead
         label="Care Plan"
         title="A plan, with the math shown."
-        lede="Most membership plans are sold on feelings. Ours comes with a calculator — and if it doesn't save you money, it'll say so."
+        lede="Most membership plans are sold on feelings. Ours comes with a calculator, and if it doesn't save you money, it'll say so."
         aside={
           <div className="on-ink panel-ink p-6 sm:p-8">
             <p className="t-data text-mint">{plan.name}</p>
@@ -58,7 +58,7 @@ export default function PlansPage() {
             <PlanCalc />
           </div>
           <p className="mt-6 text-sm text-slate">
-            Commercial buildings get a Building Account instead —{" "}
+            Commercial buildings get a Building Account instead:{" "}
             <Link href="/commercial/" className="link">
               see commercial
             </Link>

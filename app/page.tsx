@@ -39,11 +39,11 @@ const promises = [
 export default function Home() {
   return (
     <>
-      {/* 1 — Hero: headline + dispatch board */}
+      {/* 1. Hero: headline + dispatch board */}
       <section className="relative overflow-hidden border-b border-line bg-paper">
         <div className="wrap grid gap-12 py-12 md:py-16 lg:grid-cols-[1.1fr_1fr] lg:gap-14 lg:py-20">
           <div className="flex flex-col justify-center">
-            <span className="label rise self-start">Denver metro plumbing · since {site.founded}</span>
+            <span className="label rise self-start">Denver metro plumbing · locally owned</span>
             <h1 className="t-hero mt-6 rise-2">
               Water where it <span className="text-patina">belongs.</span>
             </h1>
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2 — Sort by symptom */}
+      {/* 2. Sort by symptom */}
       <section className="py-16 md:py-24">
         <div className="wrap">
           <div className="grid gap-6 lg:grid-cols-[1fr_1.3fr] lg:items-end">
@@ -99,7 +99,7 @@ export default function Home() {
             </div>
             <p className="t-lede text-slate lg:pb-1">
               Pick the symptom. We&apos;ll ask a question or two, tell you how urgent it is, and walk you through what
-              to do in the next five minutes — before you pay anyone anything.
+              to do in the next five minutes, before you pay anyone anything.
             </p>
           </div>
           <ul className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -133,7 +133,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3 — Services */}
+      {/* 3. Services */}
       <section className="border-y border-line bg-paper py-16 md:py-24">
         <div className="wrap">
           <div className="flex flex-wrap items-end justify-between gap-6">
@@ -178,7 +178,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4 — Price book teaser */}
+      {/* 4. Price book teaser */}
       <section className="py-16 md:py-24">
         <div className="wrap">
           <div className="on-ink panel-ink grid gap-10 overflow-hidden p-6 sm:p-10 lg:grid-cols-[1fr_1.25fr] lg:p-14">
@@ -211,7 +211,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5 — Tools */}
+      {/* 5. Tools */}
       <section className="pb-16 md:pb-24">
         <div className="wrap">
           <div className="grid gap-6 lg:grid-cols-[1fr_1.3fr] lg:items-end">
@@ -229,7 +229,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6 — Why Headgate */}
+      {/* 6. Why Headgate */}
       <section className="border-y border-line bg-paper py-16 md:py-24">
         <div className="wrap grid gap-14 lg:grid-cols-[1fr_1.2fr]">
           <div>
@@ -263,21 +263,21 @@ export default function Home() {
         <div className="wrap mt-16">
           <div className="flex flex-wrap items-baseline justify-between gap-3">
             <h3 className="font-display text-2xl font-bold">From the invoice file</h3>
-            <p className="t-data text-slate">Illustrative reviews — Headgate is a concept company.</p>
+            <p className="t-data text-slate">Illustrative reviews. Headgate is a concept company.</p>
           </div>
           <ul className="mt-6 grid gap-5 md:grid-cols-3">
             {reviews.map((r) => (
               <li key={r.who} className="flex flex-col rounded-2xl bg-chalk p-6">
                 <p className="t-data text-patina-deep">{r.job}</p>
                 <blockquote className="mt-3 flex-1 text-[1.05rem]">“{r.quote}”</blockquote>
-                <p className="mt-5 text-sm font-bold text-slate">— {r.who}</p>
+                <p className="mt-5 text-sm font-bold text-slate">{r.who}</p>
               </li>
             ))}
           </ul>
         </div>
       </section>
 
-      {/* 7 — Service area + booking */}
+      {/* 7. Service area + booking */}
       <section className="py-16 md:py-24">
         <div className="wrap grid gap-10 lg:grid-cols-2">
           <div className="panel p-6 sm:p-10">

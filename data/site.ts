@@ -1,6 +1,6 @@
 /**
  * Single edit point for business details. Headgate is a fictional company
- * built as a portfolio concept — the phone uses the 555-01xx fiction range and
+ * built as a portfolio concept. The phone uses the 555-01xx fiction range and
  * license numbers are samples in the real Colorado format. The street is made up
  * too (no ZIP), so the site never points at a real building.
  */
@@ -11,7 +11,6 @@ export const site = {
   description:
     "Denver-metro plumbing for homes and commercial buildings. Upfront price ranges, 2-hour arrival windows, and a live person on the emergency line 24/7.",
   locale: "en_US",
-  founded: 2009,
   phone: "(303) 555-0142",
   phoneHref: "tel:+13035550142",
   text: "(303) 555-0187",

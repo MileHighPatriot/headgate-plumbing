@@ -11,7 +11,7 @@ const SCALE = 16; // years shown on the life bar
 function verdict(age: number) {
   if (age < 6) return { tone: "wait", title: "Plenty of life left", body: "Flush it once a year to keep sediment from shortening that." } as const;
   if (age < TANK_LIFE.low)
-    return { tone: "wait", title: "Mid-life", body: "Keep up the yearly flush and have the anode rod checked — it's what the tank sacrifices to avoid rusting." } as const;
+    return { tone: "wait", title: "Mid-life", body: "Keep up the yearly flush and have the anode rod checked. It's what the tank sacrifices to avoid rusting." } as const;
   if (age <= TANK_LIFE.high)
     return { tone: "today", title: "In the replacement window", body: "No need to panic, but it's worth pricing a replacement now so you're choosing on your schedule, not after a leak." } as const;
   return { tone: "now", title: "Past typical life", body: "Tanks this old tend to fail by leaking. Check the base for moisture and plan a replacement soon." } as const;

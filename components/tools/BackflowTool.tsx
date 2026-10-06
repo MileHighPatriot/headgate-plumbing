@@ -105,7 +105,7 @@ export default function BackflowTool() {
             {reminded ? (
               <p className="mt-6 flex items-center gap-2 font-bold text-hivis">
                 <Icon name="check" className="h-5 w-5" strokeWidth={3} /> We&apos;ll remind {email} 45 days before it&apos;s
-                due. (Demo — nothing sent.)
+                due. (Demo only. Nothing sent.)
               </p>
             ) : (
               <form

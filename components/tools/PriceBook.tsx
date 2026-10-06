@@ -61,7 +61,7 @@ export default function PriceBook() {
       {groups.length === 0 && (
         <div className="mt-10 rounded-2xl border-2 border-dashed border-line p-8 text-center">
           <p className="font-bold">Nothing matches “{q}”.</p>
-          <p className="mt-1 text-slate">Call or text us — if we do it, we&apos;ll give you a range on the phone.</p>
+          <p className="mt-1 text-slate">Call or text us. If we do it, we&apos;ll give you a range on the phone.</p>
         </div>
       )}
 

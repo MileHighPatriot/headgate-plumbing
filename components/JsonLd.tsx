@@ -9,7 +9,6 @@ export default function JsonLd() {
     url: site.url,
     telephone: site.phone,
     email: site.email,
-    foundingDate: String(site.founded),
     description: site.description,
     address: {
       "@type": "PostalAddress",

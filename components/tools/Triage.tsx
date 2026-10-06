@@ -77,7 +77,7 @@ export default function Triage() {
             <Icon name="drop" className="h-8 w-8 text-patina" />
             <p className="mt-4 font-display text-2xl font-bold">Pick a symptom to start.</p>
             <p className="mt-2 max-w-md text-slate">
-              If water is pouring out right now, don&apos;t wait on this page — shut off your main valve and call{" "}
+              If water is pouring out right now, don&apos;t wait on this page. Shut off your main valve and call{" "}
               <a href={site.phoneHref} className="link">
                 {site.phone}
               </a>

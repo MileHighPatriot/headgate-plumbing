@@ -8,14 +8,14 @@ import { team } from "@/data/team";
 export const metadata: Metadata = {
   title: "About Headgate",
   description:
-    "Headgate Plumbing & Drain is a locally owned Denver plumbing company, founded in 2009 by a master plumber. Not private equity. Plumbers paid hourly, not on commission.",
+    "Headgate Plumbing & Drain is a locally owned Denver plumbing company, founded by a master plumber. Not private equity. Plumbers paid hourly, not on commission.",
 };
 
 const beliefs = [
   ["Say the price out loud.", "Published ranges online, a written price on site, and no work until you say yes."],
   ["Pay plumbers to fix things, not sell things.", "Our plumbers are paid hourly. Nobody here earns a bonus for a water heater."],
   ["Answer the phone.", "A person on the emergency line all night, who can walk you to your shutoff before a truck arrives."],
-  ["Leave it better documented.", "Photos, camera video, and a written cause on every job, so the next plumber — or buyer — knows what's there."],
+  ["Leave it better documented.", "Photos, camera video, and a written cause on every job, so the next plumber (or buyer) knows what's there."],
 ];
 
 function initials(name: string) {
@@ -28,7 +28,7 @@ export default function AboutPage() {
       <PageHead
         label="About"
         title="Named after a ditch gate. Run like one."
-        lede={`A headgate is the gate at the top of an irrigation ditch — the thing that decides where the water goes. Marisol Vega grew up opening and closing them on her grandfather's farm near Brighton. She started Headgate in ${site.founded} with one truck and a sewer camera.`}
+        lede={`A headgate is the gate at the top of an irrigation ditch, the thing that decides where the water goes. Marisol Vega grew up opening and closing them on her grandfather's farm near Brighton. She started Headgate with one truck and a sewer camera.`}
         aside={
           <div className="fitting-photo aspect-[3/4] max-h-[28rem] bg-ink/10">
             <Photo name="wall-pipes" alt="White pipes running up a blue corrugated wall" sizes="(min-width: 1024px) 460px, 100vw" priority />
@@ -43,7 +43,7 @@ export default function AboutPage() {
             <h2 className="t-h2 mt-4 max-w-[13ch]">Locally owned. Not private equity.</h2>
             <p className="mt-5 text-slate">
               A lot of the Front Range&apos;s best-known plumbing brands now belong to national investment groups. There&apos;s
-              nothing wrong with that — but it changes who the company answers to. Headgate is owned by the master
+              nothing wrong with that, but it changes who the company answers to. Headgate is owned by the master
               plumber whose license it runs under, and she still takes the Monday dispatch meeting.
             </p>
           </div>
@@ -62,7 +62,7 @@ export default function AboutPage() {
         <div className="wrap">
           <div className="flex flex-wrap items-baseline justify-between gap-3">
             <h2 className="t-h2">Who shows up</h2>
-            <p className="t-data text-slate">Sample crew — Headgate is a concept company.</p>
+            <p className="t-data text-slate">Sample crew. Headgate is a concept company.</p>
           </div>
           <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {team.map((t) => (
