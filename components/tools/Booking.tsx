@@ -166,16 +166,31 @@ export default function Booking() {
             <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl bg-alert p-4 text-white">
               <p className="font-bold">
                 {need === "gas"
-                  ? `Smell gas? Leave the house and call Xcel Energy at ${site.xcelGasEmergency} first.`
+                  ? `Smell gas? Leave, move away, then call 911 and Xcel at ${site.xcelGasEmergency} from outside.`
                   : "This one shouldn't wait for a window. Call us now."}
               </p>
-              <a
-                href={need === "gas" ? site.xcelGasEmergencyHref : site.phoneHref}
-                className="btn min-h-10 bg-white text-alert hover:bg-alert-soft"
-              >
-                <Icon name="phone" className="h-4 w-4" />
-                {need === "gas" ? site.xcelGasEmergency : site.phone}
-              </a>
+              {need === "gas" ? (
+                <div className="flex flex-wrap gap-3">
+                  {/* Concept site: shown, but not dialable. */}
+                  <span className="btn pointer-events-none min-h-11 bg-white text-alert">
+                    <Icon name="phone" className="h-4 w-4" /> Call 911
+                  </span>
+                  <a href={site.xcelGasEmergencyHref} className="btn min-h-11 bg-white text-alert hover:bg-alert-soft">
+                    <Icon name="phone" className="h-4 w-4 shrink-0" />
+                    <span className="text-center">
+                      Xcel gas emergency <span className="whitespace-nowrap">{site.xcelGasEmergency}</span>
+                    </span>
+                  </a>
+                  <a href={site.phoneHref} className="btn btn-line min-h-11">
+                    Then call us: {site.phone}
+                  </a>
+                </div>
+              ) : (
+                <a href={site.phoneHref} className="btn min-h-11 bg-white text-alert hover:bg-alert-soft">
+                  <Icon name="phone" className="h-4 w-4" />
+                  {site.phone}
+                </a>
+              )}
             </div>
           ) : null}
           <div className="mt-6 inline-flex rounded-xl border border-line bg-paper p-1" role="group" aria-label="Property type">

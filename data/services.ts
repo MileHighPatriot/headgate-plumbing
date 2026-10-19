@@ -199,7 +199,7 @@ export const services: Service[] = [
     short: "Leak testing and new lines for ranges, dryers, grills and fire pits.",
     photo: "handwheel",
     photoAlt: "A red valve handwheel on dark piping",
-    lede: "If you smell gas right now, leave the house and call Xcel Energy first. Once the utility has made it safe, we find and fix the leak and pressure-test the system before anything relights.",
+    lede: "If you smell gas right now, leave the house and move away, then call 911 and Xcel from outside. Once the utility has made it safe, we find and fix the leak and pressure-test the system before anything relights.",
     signs: [
       "A rotten-egg smell near an appliance or meter",
       "A hissing sound near a gas line",
@@ -221,8 +221,8 @@ export const services: Service[] = [
       },
     ],
     colorado: {
-      title: "Xcel first, then us",
-      body: "Xcel Energy's gas emergency line is the right first call for any gas smell. They respond around the clock at no charge. Call them from outside, away from the house. We handle everything on your side of the meter after that.",
+      title: "911 and Xcel first, then us",
+      body: "Smell gas? Leave, move away, then call 911 and Xcel at 800-895-2999 from outside. Don't flip light switches or make calls while you're still inside. Wait until they say it's safe. We handle everything on your side of the meter after that.",
     },
     prices: ["gas-test", "gas-run"],
     questions: [

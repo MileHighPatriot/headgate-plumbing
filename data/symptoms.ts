@@ -45,15 +45,15 @@ export const symptoms: Symptom[] = [
     outcomes: {
       leave: {
         urgency: "now",
-        title: "Leave the house, then call Xcel Energy",
+        title: "Leave and move away, then call 911 and Xcel",
         callFirst: "xcel",
         steps: [
           "Get everyone (and pets) outside. Leave the door open behind you.",
-          "Don't flip light switches, unplug anything, or use the garage door opener.",
-          "From outside, call Xcel Energy's gas emergency line. They respond 24/7 at no charge.",
-          "Once Xcel says the house is safe, call us to find and repair the leak.",
+          "Don't flip light switches, unplug anything, use the garage door opener, or make calls while you're still inside.",
+          "Move away from the house, then call 911 and Xcel at 800-895-2999 from outside.",
+          "Wait until they say it's safe, then call us to find and repair the leak.",
         ],
-        why: "The utility has to make a gas leak safe first. We repair everything on your side of the meter after that.",
+        why: "911 and the utility have to make a gas leak safe first. We repair everything on your side of the meter after that.",
         prices: ["gas-test"],
         service: "gas-lines",
       },
@@ -154,7 +154,7 @@ export const symptoms: Symptom[] = [
         steps: [
           "Look through the small window at the bottom of the tank for a flame.",
           "If it's out, follow the relighting steps on the tank's label, once. If it won't stay lit, stop.",
-          "If you smell gas at any point, leave and call Xcel Energy.",
+          "If you smell gas at any point, leave, move away, and call 911 and Xcel from outside.",
         ],
         why: "A pilot that won't stay lit is usually a thermocouple or gas valve, often a same-visit repair.",
         prices: ["wh-repair", "wh-tank"],
