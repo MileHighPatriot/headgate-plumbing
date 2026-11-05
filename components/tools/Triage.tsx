@@ -128,10 +128,8 @@ export default function Triage() {
               <div className="mt-6 flex flex-wrap gap-3">
                 {outcome.callFirst === "xcel" ? (
                   <>
-                    {/* Concept site: shown, but not dialable. */}
-                    <span className="btn pointer-events-none bg-white text-alert">
-                      <Icon name="phone" className="h-4 w-4" /> Call 911
-                    </span>
+                    {/* Concept site: plain text, never a link or button. */}
+                    <strong className="self-center text-lg">Dial 911</strong>
                     <a href={site.xcelGasEmergencyHref} className="btn bg-white text-alert hover:bg-alert-soft">
                       <Icon name="phone" className="h-4 w-4 shrink-0" />
                       <span className="text-center">
