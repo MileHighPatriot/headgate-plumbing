@@ -21,7 +21,8 @@ export const site = {
     city: "Denver",
     region: "CO",
   },
-  geo: { lat: 39.7392, lon: -104.9903 },
+  // City-level point for the weather lookup only (Open-Meteo); not an address and not in the JSON-LD.
+  geo: { lat: 39.74, lon: -104.99 },
   hours: {
     office: "Mon–Sat, 7am–7pm",
     emergency: "24/7, answered by a person",
