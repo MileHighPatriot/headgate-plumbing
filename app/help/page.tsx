@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "What's going on? Plumbing triage",
   description:
     "Pick the plumbing symptom you're seeing. Get an urgency level, what to do in the next five minutes, and typical Denver price ranges.",
+  alternates: { canonical: "/help/" },
 };
 
 export default function HelpPage() {

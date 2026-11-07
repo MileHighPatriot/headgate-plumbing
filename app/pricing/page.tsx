@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Price book: typical Denver plumbing prices",
   description:
     "Typical price ranges for drain cleaning, sewer repair, water heaters, repiping, gas lines and commercial backflow testing in the Denver metro.",
+  alternates: { canonical: "/pricing/" },
 };
 
 const rules = [

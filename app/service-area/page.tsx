@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Service area: Denver metro",
   description:
     "Headgate serves Denver, Aurora, Lakewood, Arvada, Englewood, Littleton, Centennial, Westminster, Thornton and more. Check your ZIP code.",
+  alternates: { canonical: "/service-area/" },
 };
 
 export default function ServiceAreaPage() {

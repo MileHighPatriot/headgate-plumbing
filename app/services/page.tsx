@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Plumbing services",
   description:
     "Drain and sewer, water heaters, water lines and repiping, leaks and fixtures, gas lines, and 24/7 emergency plumbing across the Denver metro.",
+  alternates: { canonical: "/services/" },
 };
 
 export default function ServicesPage() {

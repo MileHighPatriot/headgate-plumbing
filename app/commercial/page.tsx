@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: "Commercial plumbing & backflow testing",
   description:
     "Commercial plumbing for Denver restaurants, property managers and multifamily buildings: scheduled line jetting, grease interceptors, backflow testing and filing, 24/7 response.",
+  alternates: { canonical: "/commercial/" },
 };
 
 const sectors = [

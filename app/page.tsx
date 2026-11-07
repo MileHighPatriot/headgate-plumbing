@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import DispatchBoard from "@/components/DispatchBoard";
 import Icon from "@/components/Icon";
@@ -10,6 +11,10 @@ import { services } from "@/data/services";
 import { site } from "@/data/site";
 import { symptoms, urgencyCopy } from "@/data/symptoms";
 import { reviews } from "@/data/team";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const teaserPrices = ["clog-fixture", "main-cable", "camera", "wh-tank", "prv", "backflow-test"];
 

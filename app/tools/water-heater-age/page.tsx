@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "How old is my water heater? Serial number decoder",
   description:
     "Decode the manufacture date of a Rheem, Ruud, A.O. Smith, State or Bradford White water heater from its serial number, and see how much life it has left.",
+  alternates: { canonical: "/tools/water-heater-age/" },
 };
 
 export default function HeaterAgePage() {

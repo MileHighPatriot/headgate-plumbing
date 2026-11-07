@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Freeze Watch: Denver frozen pipe forecast",
   description:
     "Denver's 7-day overnight lows with freeze-risk nights flagged, plus a frozen-pipe checklist based on Denver Water's advice.",
+  alternates: { canonical: "/tools/freeze-watch/" },
 };
 
 export default function FreezeWatchPage() {

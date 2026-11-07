@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "About Headgate",
   description:
     "Headgate Plumbing & Drain is a locally owned Denver plumbing company, founded by a master plumber. Not private equity. Plumbers paid hourly, not on commission.",
+  alternates: { canonical: "/about/" },
 };
 
 const beliefs = [

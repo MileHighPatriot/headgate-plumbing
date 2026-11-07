@@ -17,7 +17,6 @@ export default function JsonLd() {
       addressRegion: site.address.region,
       addressCountry: "US",
     },
-    geo: { "@type": "GeoCoordinates", latitude: site.geo.lat, longitude: site.geo.lon },
     areaServed: areas.map((a) => ({ "@type": "City", name: `${a.city}, CO` })),
     openingHoursSpecification: [
       {

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Whose pipe is it? Denver water & sewer ownership",
   description:
     "An interactive cutaway of a Denver lot showing which water and sewer pipes the property owner is responsible for, and which belong to the utility.",
+  alternates: { canonical: "/tools/whose-pipe/" },
 };
 
 export default function WhosePipePage() {

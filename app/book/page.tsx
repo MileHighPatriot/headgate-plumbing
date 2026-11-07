@@ -7,6 +7,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Book a two-hour arrival window",
   description: "Book a Denver-metro plumber in a two-hour arrival window. We text when your plumber is 30 minutes out.",
+  alternates: { canonical: "/book/" },
 };
 
 export default function BookPage() {

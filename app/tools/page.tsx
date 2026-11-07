@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Homeowner plumbing tools",
   description:
     "Free Denver plumbing tools: see which pipes you own, decode your water heater's age from its serial number, and track freeze-risk nights.",
+  alternates: { canonical: "/tools/" },
 };
 
 export default function ToolsPage() {

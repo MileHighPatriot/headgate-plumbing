@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "Headgate Care Plan",
   description:
     "A $16/month plumbing plan for Denver homes: yearly water heater flush and check-up, 15% off repairs, and no service-call or after-hours fees. With the math shown.",
+  alternates: { canonical: "/plans/" },
 };
 
 export default function PlansPage() {

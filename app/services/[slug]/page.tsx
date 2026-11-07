@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: PageProps<"/services/[slug]">
   const { slug } = await params;
   const s = serviceBySlug[slug];
   if (!s) return {};
-  return { title: `${s.name} in Denver`, description: s.short };
+  return { title: `${s.name} in Denver`, description: s.short, alternates: { canonical: `/services/${s.slug}/` } };
 }
 
 const decades = [

@@ -7,6 +7,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Contact",
   description: "Call, text or email Headgate Plumbing & Drain. The emergency line is answered by a person 24/7.",
+  alternates: { canonical: "/contact/" },
 };
 
 const ways = [
