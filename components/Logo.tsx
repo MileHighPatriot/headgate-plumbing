@@ -3,7 +3,7 @@ import { site } from "@/data/site";
 export function LogoMark({ className = "h-9 w-9" }: { className?: string }) {
   return (
     <svg viewBox="0 0 36 36" className={className} aria-hidden="true">
-      <rect width="36" height="36" rx="10" fill="#0b2a2a" />
+      <rect x=".75" y=".75" width="34.5" height="34.5" rx="9.5" fill="#0b2a2a" stroke="#1f7a6d" strokeWidth="1.5" />
       <path d="M8 29V9M28 29V9M6 9h24" stroke="#9ed8c6" strokeWidth="2.6" strokeLinecap="round" />
       <rect x="11.5" y="12" width="13" height="8.5" rx="1.6" fill="#d9f24b" />
       <path d="M11.5 16.25h13" stroke="#0b2a2a" strokeWidth="1.4" />

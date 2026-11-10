@@ -7,7 +7,22 @@ import { site } from "@/data/site";
 
 export default function Footer() {
   return (
-    <footer className="on-ink bg-ink pb-24 text-paper lg:pb-0">
+    <footer className="on-ink relative bg-ink pb-24 text-paper lg:pb-0">
+      <div aria-hidden="true" className="shoreline">
+        <svg viewBox="0 0 2400 34" preserveAspectRatio="none">
+          <path
+            fill="#1f7a6d"
+            fillOpacity=".55"
+            d="M0 14c100-14 200-14 300 0s200 14 300 0 200-14 300 0 200 14 300 0 200-14 300 0 200 14 300 0 200-14 300 0 200 14 300 0v20H0z"
+          />
+        </svg>
+        <svg viewBox="0 0 2400 34" preserveAspectRatio="none">
+          <path
+            fill="#0b2a2a"
+            d="M0 20c75-10 150-10 225 0s150 10 225 0 150-10 225 0 150 10 225 0 150-10 225 0 150 10 225 0 150-10 225 0 150 10 225 0 150-10 225 0 150 10 225 0 150-10 150-5v19H0z"
+          />
+        </svg>
+      </div>
       <div className="wrap grid gap-12 py-16 lg:grid-cols-[1.2fr_2fr]">
         <div>
           <Logo tone="paper" />

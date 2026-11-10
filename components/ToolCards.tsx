@@ -28,6 +28,7 @@ function Glyph({ kind }: { kind: string }) {
       <svg viewBox="0 0 120 64" className="h-16 w-auto" aria-hidden="true">
         <path d="M4 44h40" stroke="#9ed8c6" strokeWidth="8" strokeLinecap="round" />
         <path d="M44 44h32a12 12 0 0 0 12-12V14" stroke="#d9f24b" strokeWidth="8" fill="none" strokeLinecap="round" />
+        <path className="glyph-flow" d="M8 44h68a12 12 0 0 0 12-12V16" stroke="#0b2a2a" strokeWidth="2.5" fill="none" strokeLinecap="round" />
         <path d="M76 44h40" stroke="#9ed8c6" strokeWidth="8" strokeLinecap="round" opacity=".45" />
         <circle cx="44" cy="44" r="7" fill="#0b2a2a" stroke="#9ed8c6" strokeWidth="3" />
       </svg>
@@ -46,6 +47,8 @@ function Glyph({ kind }: { kind: string }) {
       {[0, 1, 2, 3, 4, 5, 6].map((i) => (
         <rect
           key={i}
+          className="glyph-bar"
+          style={{ "--i": i } as React.CSSProperties}
           x={8 + i * 15}
           y={i === 2 || i === 3 ? 34 : 18 + (i % 3) * 4}
           width="9"
@@ -64,10 +67,10 @@ export default function ToolCards() {
   return (
     <ul className="grid gap-5 md:grid-cols-3">
       {tools.map((t) => (
-        <li key={t.href}>
+        <li key={t.href} className="reveal">
           <Link
             href={t.href}
-            className="on-ink group flex h-full flex-col rounded-[var(--radius-fit)] bg-ink p-6 text-paper transition-transform hover:-translate-y-0.5"
+            className="on-ink lift group flex h-full flex-col rounded-[var(--radius-fit)] bg-ink p-6 text-paper"
           >
             <div className="flex h-24 items-center rounded-2xl bg-ink-2 px-5">
               <Glyph kind={t.glyph} />

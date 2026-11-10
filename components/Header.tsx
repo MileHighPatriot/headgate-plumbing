@@ -35,7 +35,7 @@ export default function Header() {
 
   return (
     <header ref={headerRef} className="relative z-40">
-      <div className="on-ink bg-ink text-paper">
+      <div className="on-ink bg-ink-2 text-paper">
         <div className="wrap flex min-h-10 items-center justify-between gap-4 py-1.5 text-sm">
           <a href={site.phoneHref} className="flex items-center gap-2 font-bold hover:text-hivis">
             <span className="relative flex h-2.5 w-2.5">
@@ -56,10 +56,10 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="border-b border-line bg-chalk/95 backdrop-blur supports-[backdrop-filter]:bg-chalk/85">
+      <div className="site-nav on-ink border-b border-white/10 bg-ink text-paper">
         <div className="wrap flex h-[4.5rem] items-center justify-between gap-6">
           <Link href="/" className="shrink-0">
-            <Logo />
+            <Logo tone="paper" />
           </Link>
 
           <nav aria-label="Main" className="hidden lg:block">
@@ -69,7 +69,7 @@ export default function Header() {
                   <Link
                     href={item.href}
                     aria-current={isActive(item.href) ? "page" : undefined}
-                    className="rounded-lg px-3 py-2 font-bold text-ink/80 transition-colors hover:bg-mint-soft hover:text-ink aria-[current=page]:bg-ink aria-[current=page]:text-paper"
+                    className="rounded-lg px-3 py-2 font-bold text-paper/85 transition-colors hover:bg-ink-3 hover:text-paper aria-[current=page]:bg-hivis aria-[current=page]:text-ink"
                   >
                     {item.label}
                   </Link>

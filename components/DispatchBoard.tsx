@@ -8,7 +8,8 @@ import { FREEZE_F, useForecast } from "@/lib/useForecast";
 import { useNow } from "@/lib/useNow";
 import { dayLabel, denverNow, hourLabel, isOfficeOpen, nextOpenSlot, windowLabel } from "@/lib/schedule";
 
-function Row({ k, children, href }: { k: string; children: React.ReactNode; href?: string }) {
+function Row({ k, children, href, i }: { k: string; children: React.ReactNode; href?: string; i: number }) {
+  const style = { "--i": i } as React.CSSProperties;
   const body = (
     <>
       <span className="t-data shrink-0 text-fog">{k}</span>
@@ -18,12 +19,15 @@ function Row({ k, children, href }: { k: string; children: React.ReactNode; href
   return href ? (
     <Link
       href={href}
-      className="group flex min-h-12 items-center justify-between gap-4 border-t border-white/10 py-2.5 hover:text-hivis"
+      style={style}
+      className="row-in group flex min-h-12 items-center justify-between gap-4 border-t border-white/10 py-2.5 hover:text-hivis"
     >
       {body}
     </Link>
   ) : (
-    <div className="flex min-h-12 items-center justify-between gap-4 border-t border-white/10 py-2.5">{body}</div>
+    <div style={style} className="row-in flex min-h-12 items-center justify-between gap-4 border-t border-white/10 py-2.5">
+      {body}
+    </div>
   );
 }
 
@@ -43,7 +47,7 @@ export default function DispatchBoard() {
   const freeze = low !== null && low <= FREEZE_F;
 
   return (
-    <div className="on-ink panel-ink tabbed relative shadow-[0_30px_60px_-30px_rgb(11_42_42/0.6)]">
+    <div className="on-ink panel-ink board tabbed relative">
       <div className="absolute -top-[2.05rem] left-0">
         <span className="tab">Dispatch board</span>
       </div>
@@ -62,7 +66,7 @@ export default function DispatchBoard() {
         </div>
 
         <div className="mt-4">
-          <Row k="Next open arrival" href="/book/">
+          <Row i={0} k="Next open arrival" href="/book/">
             {slot ? (
               <>
                 {dayLabel(slot.date, now ?? undefined)}, {windowLabel(slot.start)}
@@ -72,15 +76,15 @@ export default function DispatchBoard() {
             )}
             <Icon name="arrow" className="h-4 w-4 text-mint transition-transform group-hover:translate-x-0.5" />
           </Row>
-          <Row k="Emergency line">
+          <Row i={1} k="Emergency line">
             <a href={site.phoneHref} className="hover:text-hivis">
               A person answers, 24/7
             </a>
           </Row>
-          <Row k={open ? "Crews in the field" : "On call tonight"}>
+          <Row i={2} k={open ? "Crews in the field" : "On call tonight"}>
             {open ? "7 trucks" : "2 plumbers"}
           </Row>
-          <Row k="Tonight's low" href="/tools/freeze-watch/">
+          <Row i={3} k="Tonight's low" href="/tools/freeze-watch/">
             {forecast.status === "loading" && <span className="text-fog">Loading…</span>}
             {forecast.status === "error" && <span className="text-fog">See Freeze Watch</span>}
             {low !== null && (
